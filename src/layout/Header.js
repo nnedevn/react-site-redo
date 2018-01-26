@@ -15,14 +15,12 @@ class Header extends Component {
           <div className="video-box">
             <div className="img-video">
               <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/overstock-image.jpg" alt="overstock" />
-              <div className="img-video">
                 <video width="368" height="208" autoplay="" controls="" poster="https://dcfv5z6t7wfeu.cloudfront.net/img/landing/landing_video_3.jpg" />
               		<source src="https://drxdv8f27mzoi.cloudfront.net/marketing/lander_video_oct.mp4?1" type="video/mp4" />
-                <div className="img-video">
                   <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/wholesale-image.jpg" alt="wholesale"/>
+                </div>
                   <div className="full">
                     <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/bbb-2013.png" alt="bbb" class="bbb-image" />
-                    </div>
                     <div className="full">
                       <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/quibids-versus.jpg" alt="QuiBids Versus" class="hide-md"/>
                       <div className="full">
@@ -39,10 +37,8 @@ class Header extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    )
-  }
-}
+        )
+      }
+    }
 
 export default Header

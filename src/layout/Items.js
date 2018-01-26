@@ -3,14 +3,13 @@ import Item from './Item';
 
 class Items extends Component {
 
-  render(){
+  render() {
+    const allItems = this.props.items.map((item) => {
+      return <Item item={item} />
+    })
 
-      const allItems = this.props.items.map((item)=> {
-   return <Item item={item}/>
-  })
-  
     return (
-      <div className="allItems">
+      <div className="all-items">
         {allItems}
       </div>
     )

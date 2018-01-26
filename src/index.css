@@ -80,7 +80,7 @@ body {
   max-width: 930px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-
+}
 .single-item {
     margin: 10px 0;
     justify-self: center;

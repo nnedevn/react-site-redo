@@ -69,6 +69,23 @@ body {
     border-bottom: 1px solid #BFBFBF;
 }
 
+
+@keyframes fadeIt {
+  0%   { background-color: #FFFFFF; }
+  50%  { background-color: #F1A94A; }
+  100% { background-color: #FFFFFF; }
+}
+
+.button-flash{    
+    background-image:none !important;
+    -webkit-animation: fadeIt 1s ease-in-out; 
+       -moz-animation: fadeIt 1s ease-in-out; 
+         -o-animation: fadeIt 1s ease-in-out; 
+            animation: fadeIt 1s ease-in-out; 
+}
+
+
+
 @media (max-width: 860px) {
   .all-items {
       display: grid;

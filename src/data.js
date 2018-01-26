@@ -15,6 +15,34 @@ const myData =
     username: "someWeirdo"
   },
   {
+    productName:'Shingles',
+    imgUrl:'https://dl52d2tabxpgo.cloudfront.net/002/622/131/e.jpg',
+    timerValue:15,
+    price: .5,
+    username: "someShmuck"
+  },
+  {
+    productName:'U.S. Traveler Bradford 5-Piece Luggage',
+    imgUrl:'https://dl52d2tabxpgo.cloudfront.net/001/928/311/e.jpg',
+    timerValue: 10,
+    price: .5,
+    username: "someWeirdo"
+  },
+  {
+    productName:'Shingles',
+    imgUrl:'https://dl52d2tabxpgo.cloudfront.net/002/622/131/e.jpg',
+    timerValue:15,
+    price: .5,
+    username: "someShmuck"
+  },
+  {
+    productName:'U.S. Traveler Bradford 5-Piece Luggage',
+    imgUrl:'https://dl52d2tabxpgo.cloudfront.net/001/928/311/e.jpg',
+    timerValue: 10,
+    price: .5,
+    username: "someWeirdo"
+  },
+  {
     productName:'Wolfgang Puck Elite Mixing Bowl Set',
     imgUrl:'https://dl52d2tabxpgo.cloudfront.net/003/579/341/e.jpg',
     timerValue:13,

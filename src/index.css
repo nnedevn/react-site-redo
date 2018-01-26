@@ -2,7 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: helvetica, arial, sans-serif;
+
     background-color: rgb(237, 237, 237);
+
+}
+/*header*/
+.img-video{
+  display: inline-block;
+  float: left;
+}
+.form-master {
+    width: 350px;
+    height: 200px;
+    float: right;
+
 }
 
 
@@ -68,14 +81,15 @@ body {
 }
 
 .all-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
   max-width: 930px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
-
 .single-item {
     margin: 10px 0;
-    justify-self: center;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #BFBFBF;
     max-width: 305px;
@@ -89,12 +103,23 @@ body {
     line-height: 22px;
     border-bottom: 1px solid #BFBFBF;
 }
-
-
+.username{
+  color: grey;
+}
 @keyframes fadeIt {
   0%   { background-color: #FFFFFF; }
   50%  { background-color: #F1A94A; }
   100% { background-color: #FFFFFF; }
+}
+
+
+=======
+/*price*/
+h3{
+  color: #5dc21e;
+}
+h5{
+  color: #007fdd;
 }
 
 .button-flash{
@@ -103,6 +128,22 @@ body {
        -moz-animation: fadeIt 1s ease-in-out;
          -o-animation: fadeIt 1s ease-in-out;
             animation: fadeIt 1s ease-in-out;
+
+}
+.payme-button{
+  background-color: #e56400;
+  background-image: url(/site/images/layout/orange-btn.jpg);
+  color: #fff!important;
+  text-shadow: 0 1px 2px #693100;
+  border-color: #fc7105;
+  height: 38px;
+  width: 106px;
+  padding: 0 12px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+
 }
 
 @media (max-width: 860px) {
@@ -111,7 +152,6 @@ body {
       grid-template-columns: auto auto auto auto;
   }
 }
-
 @media (max-width: 700px) {
     .all-items {
         display: grid;
@@ -123,5 +163,6 @@ body {
     .all-items {
         display: grid;
         grid-template-columns: auto auto;
+
     }
 }

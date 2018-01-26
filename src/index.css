@@ -10,6 +10,7 @@ body {
   float: right;
 }
 
+
 .bottom {
   font-family: helvetica,arial,sans-serif;
   padding: 0 0 30px 0;
@@ -46,3 +47,30 @@ body {
   text-align: center;
   width: 80%;
 }
+
+.all-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.single-item {
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #BFBFBF;
+  max-width: 305px;
+
+}
+
+@media (max-width: 700px){
+  .all-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 400px){
+  .all-items{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+

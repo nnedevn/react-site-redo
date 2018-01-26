@@ -8,7 +8,6 @@ import Header from './layout/Header.js';
 import Footer from './layout/Footer.js';
 import BottomAdds from './layout/BottomAdds.js';
 
-
 class App extends Component {
   render() {
     return (
@@ -17,6 +16,7 @@ class App extends Component {
         // Add items tag
       <BottomAdds />
       <Footer />
+       <Items items={myData}/>
       </div>
     );
   }

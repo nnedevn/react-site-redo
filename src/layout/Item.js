@@ -1,60 +1,64 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 
-// class Item extends Component {
-//     constructor(props){
-//     super();
-//     this.state = {
-//       timer: '',
-//       price: ''
+class Item extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      timer: '',
+      price: '',
+      flashClass: 'button-flash'
 
-//     }
-//   }
+    }
+  }
+  // -------Helper functions
+  updateComponent = (e) => {
+    console.log('update component')
+  }
 
-//   tick = () => {
-//     // If there is one sec remaining reset timer to 10
-//     if(this.state.timer === 1 ){
-//       this.setState({
-//         timer: 10
-//       });
-//     }
-//     // Tick down by one each second
-//     this.timerId = setInterval (
-//       ()=>this.tick(), 1000
-//     )
+  tick = () => {
+    if (this.state.timer > 1) {
+      this.setState({
+        timer: this.state.timer - 1,
+      })
+    } else {
+      
+      this.setState({
+        timer: 10 + Math.round(2 * Math.random()),
+        price: this.state.price +0.01
+      })
+    }
+  }
 
-//     this.setState({
-//       timer: this.state.timer 1
-//     })
+  componentDidMount() {
+    this.setState({
+      timer: this.props.item.timerValue,
+      price: this.props.item.price
+    });
 
-//   }
+    this.timerID = setInterval(
+      () => this.tick(), 1000
+    );
+  }
 
-//   componentDidMount() {
-//     alert();
-//   }
+  render() {
+    console.log(this.props.item)
 
-//   updateComponent = (e) => {
+    return (
+      <div className="single-item">
+        <div>
+          <a href="#"><h5>{this.props.item.productName}</h5></a>
+        </div>
+        <p>Time remaining: {this.state.timer}</p>
+        <div className="auction-item-img">
+          <a href=""><img src={this.props.item.imgUrl} alt="" /></a>
+          <h3 className={this.state.flashClass}>${parseFloat(this.state.price).toFixed(2)}</h3>
+          <h5>{this.props.item.username}</h5>
+          <input type="button" value="Pay me!" onClick={this.updateComponent} />
+        </div>
+      </div>
 
+    )
+  }
+}
 
-//   } 
-//   render(){
-//     console.log(this.props.item)
-//     // let timer = this.props.item.timer;
-//     // let user = this.props.item.userName;
-
-//     return (
-//       <div>
-//         <div>
-//         <a href="#"><h5>{this.props.item.productName}</h5></a>
-//       </div>
-//       <div className="auction-item-img">
-//         <a href=""><img src={this.props.item.imgUrl} alt=""/></a>
-//        {this.state.timer}
-//       </div>
-//       <input type="button" value="Pay me!" onClick={this.updateComponent}/>
-//       </div>
-    
-//     )
-//   }
-// }
-
-// export default Item
+export default Item

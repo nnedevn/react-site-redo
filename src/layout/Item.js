@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 
 class Item extends Component {
@@ -16,7 +17,6 @@ class Item extends Component {
       timer: 10 + Math.round(4 * Math.random()),
       price: this.state.price +0.01,
       flashClass:'button-flash'
-     
     })
   }
   // Update the price and timer values every second
@@ -59,7 +59,7 @@ class Item extends Component {
           <a href=""><img src={this.props.item.imgUrl} alt="" /></a>
           <p>Time remaining: {this.state.timer}</p>
           <h3 className={this.state.flashClass}>${parseFloat(this.state.price).toFixed(2)}</h3>
-          <h5>{this.props.item.username}</h5>
+          <h5 className="username">{this.props.item.username}</h5>
           <input className="payme-button"type="button" value="Pay me!" onClick={this.updateComponent} />
         </div>
       </div>

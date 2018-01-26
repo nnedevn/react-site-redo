@@ -28,7 +28,7 @@ class Item extends Component {
       })
     } else {
       this.setState({
-        timer: 10 + Math.round(2 * Math.random()),
+        timer: 10 + Math.round(3 * Math.random()),
         price: this.state.price + 0.01,
         flashClass: 'button-flash'
       })

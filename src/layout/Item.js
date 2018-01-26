@@ -12,7 +12,10 @@ class Item extends Component {
   }
   // -------Helper functions
   updateComponent = (e) => {
-    console.log('update component')
+    this.setState({
+      timer: 10 + Math.round(4 * Math.random()),
+      price: this.state.price +0.01
+    })
   }
 
   tick = () => {

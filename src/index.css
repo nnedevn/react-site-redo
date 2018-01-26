@@ -83,7 +83,7 @@ body {
 }
 .single-item {
     margin: 10px 0;
-    justify-self: center;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #BFBFBF;
     max-width: 305px;
@@ -97,7 +97,9 @@ body {
     line-height: 22px;
     border-bottom: 1px solid #BFBFBF;
 }
-
+.username{
+  color: grey;
+}
 @keyframes fadeIt {
   0%   { background-color: #FFFFFF; }
   50%  { background-color: #F1A94A; }
@@ -105,7 +107,10 @@ body {
 }
 /*price*/
 h3{
-  color: green;
+  color: #5dc21e;
+}
+h5{
+  color: #007fdd;
 }
 .button-flash{
     background-image:none !important;

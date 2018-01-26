@@ -11,6 +11,7 @@ class BottomAdds extends Component {
         <img src="https://dcfv5z6t7wfeu.cloudfront.net//images/landing/48/satisfiedcustomers.jpg" alt="satisfiedcustomers" className="cant" />
 
       <div className="formz">
+        <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/form-left-001.jpg" className="lefty" alt="savings" />
         <div className="form-master">
             <div className="form-wrapper clearfix">
             <div>
@@ -90,7 +91,7 @@ class BottomAdds extends Component {
             <span className="strength">
               <table>
                 <tbody><tr>
-                  <td valign="top"><span className="strength-title">Strength:</span></td>
+                  <td valign="top"><span className="strength-title"></span></td>
                   <td>
                     <div id="mypassword_text" className="strength-text"></div>
                     <div id="mypassword_bar" className="strength-bar"></div>
@@ -128,7 +129,7 @@ class BottomAdds extends Component {
         </div></div></div>
           </div>
 
-          <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/form-left-001.jpg" className="lefty" alt="savings" />
+
 
         </div>
       </div>

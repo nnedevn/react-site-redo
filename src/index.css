@@ -10,6 +10,32 @@ body {
     float: right;
 }
 
+
+.clearfix {
+  background-image: url(http://www.pptback.com/backgrounds/party-blue-stripe-backgrounds-powerpoint.jpg);
+  background-size: cover;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+.clearfix a {
+  color: white;
+}
+
+.getr {
+  display: block;
+  width: 100%;
+}
+
+.lefty {
+  padding-left: 80px;
+}
+
+.formz {
+  width: 80%;
+}
+
 .bottom {
     font-family: helvetica, arial, sans-serif;
     padding: 0 0 30px 0;
@@ -19,17 +45,15 @@ body {
 }
 
 .quotes img {
-    display: inline-block;
-    float: left;
-    width: 33.3%;
-    height: 330px;
+  display: inline-block;
+  float: left;
+  width: 33.3%;
+  height: 330px;
 }
 
 .title {
     text-align: center;
 }
-
-.formz {}
 
 .promise {
     width: 80%;
@@ -84,8 +108,6 @@ body {
             animation: fadeIt 1s ease-in-out; 
 }
 
-
-
 @media (max-width: 860px) {
   .all-items {
       display: grid;
@@ -106,3 +128,4 @@ body {
         grid-template-columns: auto auto;
     }
 }
+

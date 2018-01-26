@@ -1,14 +1,15 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: helvetica,arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
 }
 
 .form-master {
-  width: 350px;
-  height: 200px;
-  float: right;
+    width: 350px;
+    height: 200px;
+    float: right;
 }
+
 
 .clearfix {
   background-image: url(http://www.pptback.com/backgrounds/party-blue-stripe-backgrounds-powerpoint.jpg);
@@ -36,11 +37,11 @@ body {
 }
 
 .bottom {
-  font-family: helvetica,arial,sans-serif;
-  padding: 0 0 30px 0;
-  margin: 0;
-  clear: both;
-  text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    padding: 0 0 30px 0;
+    margin: 0;
+    clear: both;
+    text-align: center;
 }
 
 .quotes img {
@@ -51,46 +52,80 @@ body {
 }
 
 .title {
-  text-align: center;
+    text-align: center;
 }
 
 .promise {
-  width: 80%;
+    width: 80%;
 }
 
 .satisfied {
-  width: 350px;
-  height: 200px;
-  float: left;
+    width: 350px;
+    height: 200px;
+    float: left;
 }
 
 .cant {
-  text-align: center;
-  width: 80%;
+    text-align: center;
+    width: 80%;
 }
 
 .all-items {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  max-width: 930px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .single-item {
-  justify-self: center;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #BFBFBF;
-  max-width: 305px;
-
+    margin: 10px 0;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #BFBFBF;
+    max-width: 305px;
+    border-radius: 8px;
+    width: 168px;
 }
 
-@media (max-width: 700px){
-  .all-items{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.product-name {
+    padding: 0 10px;
+    text-align: center;
+    line-height: 22px;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+
+@keyframes fadeIt {
+  0%   { background-color: #FFFFFF; }
+  50%  { background-color: #F1A94A; }
+  100% { background-color: #FFFFFF; }
+}
+
+.button-flash{    
+    background-image:none !important;
+    -webkit-animation: fadeIt 1s ease-in-out; 
+       -moz-animation: fadeIt 1s ease-in-out; 
+         -o-animation: fadeIt 1s ease-in-out; 
+            animation: fadeIt 1s ease-in-out; 
+}
+
+@media (max-width: 860px) {
+  .all-items {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
   }
 }
-@media (max-width: 400px){
-  .all-items{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+
+@media (max-width: 700px) {
+    .all-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
+
+@media (max-width: 500px) {
+    .all-items {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+

@@ -17,7 +17,6 @@ class Item extends Component {
       timer: 10 + Math.round(4 * Math.random()),
       price: this.state.price +0.01,
       flashClass:'button-flash'
-
     })
   }
   // Update the price and timer values every second

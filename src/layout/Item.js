@@ -16,6 +16,8 @@ class Item extends Component {
   }
 
   tick = () => {
+    let price = (this.state.price + 0.01)
+
     if (this.state.timer > 1) {
       this.setState({
         timer: this.state.timer - 1,
@@ -23,7 +25,7 @@ class Item extends Component {
     } else {
       this.setState({
         timer: 10 + Math.round(2 * Math.random()),
-        price: this.state.price + .01
+        price: price
       })
     }
   }

@@ -5,7 +5,8 @@ class Item extends Component {
     super();
     this.state = {
       timer: '',
-      price: ''
+      price: '',
+      flashClass: 'button-flash'
 
     }
   }
@@ -15,13 +16,13 @@ class Item extends Component {
   }
 
   tick = () => {
-    if(this.state.timer > 1){
+    if (this.state.timer > 1) {
       this.setState({
         timer: this.state.timer - 1,
       })
-    } else{
+    } else {
       this.setState({
-        timer: 10,
+        timer: 10 + Math.round(2 * Math.random()),
         price: this.state.price + .01
       })
     }
@@ -49,7 +50,8 @@ class Item extends Component {
         <p>Time remaining: {this.state.timer}</p>
         <div className="auction-item-img">
           <a href=""><img src={this.props.item.imgUrl} alt="" /></a>
-          <h3>${this.state.price}</h3>
+          <h3 className={this.state.flashClass}>${this.state.price}</h3>
+          <h5>{this.props.item.username}</h5>
           <input type="button" value="Pay me!" onClick={this.updateComponent} />
         </div>
       </div>

@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: helvetica, arial, sans-serif;
+
+    background-color: rgb(237, 237, 237);
+
 }
 /*header*/
 .img-video{
@@ -12,6 +15,7 @@ body {
     width: 350px;
     height: 200px;
     float: right;
+
 }
 
 
@@ -21,6 +25,7 @@ body {
   text-align: center;
   font-size: 15px;
   color: white;
+  border: 3px solid black;
 }
 
 .clearfix a {
@@ -33,11 +38,12 @@ body {
 }
 
 .lefty {
-  padding-left: 80px;
+  padding-left: 10%;
+  width: 70%
 }
 
-.formz {
-  width: 80%;
+.form-master label {
+  font-size: 25px;
 }
 
 .bottom {
@@ -105,6 +111,9 @@ body {
   50%  { background-color: #F1A94A; }
   100% { background-color: #FFFFFF; }
 }
+
+
+=======
 /*price*/
 h3{
   color: #5dc21e;
@@ -112,12 +121,14 @@ h3{
 h5{
   color: #007fdd;
 }
+
 .button-flash{
     background-image:none !important;
     -webkit-animation: fadeIt 1s ease-in-out;
        -moz-animation: fadeIt 1s ease-in-out;
          -o-animation: fadeIt 1s ease-in-out;
             animation: fadeIt 1s ease-in-out;
+
 }
 .payme-button{
   background-color: #e56400;
@@ -132,6 +143,7 @@ h5{
   font-weight: bold;
   font-size: 16px;
   border-radius: 15px;
+
 }
 
 @media (max-width: 860px) {

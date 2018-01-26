@@ -47,8 +47,9 @@ body {
 }
 
 .all-items {
+  max-width: 930px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .single-item {
@@ -66,6 +67,13 @@ body {
     text-align: center;
     line-height: 22px;
     border-bottom: 1px solid #BFBFBF;
+}
+
+@media (max-width: 860px) {
+  .all-items {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+  }
 }
 
 @media (max-width: 700px) {

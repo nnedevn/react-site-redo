@@ -6,9 +6,9 @@ class Item extends Component {
     this.state = {
       timer: '',
       price: '',
+
       flashClass: 'button-flash',
       flashClass: ''
-
     }
   }
   // -------Helper functions
@@ -17,6 +17,8 @@ class Item extends Component {
       timer: 10 + Math.round(4 * Math.random()),
       price: this.state.price +0.01,
       flashClass:'button-flash'
+      price: this.state.price + 0.01,
+      flashClass: 'button-flash'
     })
   }
   // Update the price and timer values every second
@@ -29,8 +31,9 @@ class Item extends Component {
       this.setState({
         timer: 10 + Math.round(2 * Math.random()),
         price: this.state.price + 0.01,
-        flashClass:'button-flash'
+        flashClass: 'button-flash'
       })
+
     }
   }
 

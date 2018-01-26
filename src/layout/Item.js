@@ -17,7 +17,7 @@ class Item extends Component {
       price: this.state.price +0.01
     })
   }
-
+  // Update the price and timer values every second
   tick = () => {
     if (this.state.timer > 1) {
       this.setState({

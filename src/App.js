@@ -5,7 +5,8 @@ import myData from './data.js';
 // Import Components
 import Items from './layout/Items.js';
 import Header from './layout/Header.js';
-import Form from './layout/Form.js';
+import Footer from './layout/Footer.js';
+import BottomAdds from './layout/BottomAdds.js';
 
 
 class App extends Component {
@@ -14,7 +15,8 @@ class App extends Component {
       <div className="App">
       <Header />
         // Add items tag
-      <Form />
+      <BottomAdds />
+      <Footer />
       </div>
     );
   }

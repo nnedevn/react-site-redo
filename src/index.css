@@ -103,13 +103,30 @@ body {
   50%  { background-color: #F1A94A; }
   100% { background-color: #FFFFFF; }
 }
-
+/*price*/
+h3{
+  color: green;
+}
 .button-flash{
     background-image:none !important;
     -webkit-animation: fadeIt 1s ease-in-out;
        -moz-animation: fadeIt 1s ease-in-out;
          -o-animation: fadeIt 1s ease-in-out;
             animation: fadeIt 1s ease-in-out;
+}
+.payme-button{
+  background-color: #e56400;
+  background-image: url(/site/images/layout/orange-btn.jpg);
+  color: #fff!important;
+  text-shadow: 0 1px 2px #693100;
+  border-color: #fc7105;
+  height: 38px;
+  width: 106px;
+  padding: 0 12px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
 }
 
 @media (max-width: 860px) {
@@ -129,7 +146,6 @@ body {
     .all-items {
         display: grid;
         grid-template-columns: auto auto;
+
     }
-
 }
-

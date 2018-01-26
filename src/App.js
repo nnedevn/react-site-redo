@@ -15,8 +15,7 @@ class App extends Component {
       <Header />
       <Items items={myData}/>
       <BottomAdds />
-      <Footer />
-       
+      <Footer />      
       </div>
     );
   }

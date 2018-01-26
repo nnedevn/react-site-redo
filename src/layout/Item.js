@@ -46,7 +46,7 @@ class Item extends Component {
     return (
       <div className="single-item">
         <div>
-          <a href="#"><h5>{this.props.item.productName}</h5></a>
+          <a href="#"><h5 className="product-name">{this.props.item.productName}</h5></a>
         </div>
         <p>Time remaining: {this.state.timer}</p>
         <div className="auction-item-img">

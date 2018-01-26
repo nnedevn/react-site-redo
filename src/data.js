@@ -14,4 +14,6 @@ const myData =
     price: .5,
     username: "someSmuck"
   }
-]
+];
+
+export default myData

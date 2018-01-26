@@ -16,7 +16,7 @@ class BottomAdds extends Component {
             <div>
             <div className="clearfix">
             <div className="banner">
-            <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/mobile/us/formbanner-002.png" alt="start now" className="show-md" />
+            <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/mobile/us/formbanner-002.png" alt="start now" className="getr" />
             </div>
             <div id="login-form" className="solidified rflang-en">
                 <form method="post" id="regform">
@@ -128,7 +128,7 @@ class BottomAdds extends Component {
         </div></div></div>
           </div>
 
-          <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/form-left-001.jpg" alt="savings" />
+          <img src="https://dcfv5z6t7wfeu.cloudfront.net//img/landing/march/form-left-001.jpg" className="lefty" alt="savings" />
 
         </div>
       </div>

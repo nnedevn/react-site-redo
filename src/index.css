@@ -3,3 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.form-master {
+  width: 350px; 
+  height: 200px; 
+  float: right;
+}

@@ -16,16 +16,15 @@ class Item extends Component {
   }
 
   tick = () => {
-    let price = (this.state.price + 0.01)
-
     if (this.state.timer > 1) {
       this.setState({
         timer: this.state.timer - 1,
       })
     } else {
+      
       this.setState({
         timer: 10 + Math.round(2 * Math.random()),
-        price: price
+        price: this.state.price +0.01
       })
     }
   }
@@ -52,7 +51,7 @@ class Item extends Component {
         <p>Time remaining: {this.state.timer}</p>
         <div className="auction-item-img">
           <a href=""><img src={this.props.item.imgUrl} alt="" /></a>
-          <h3 className={this.state.flashClass}>${this.state.price}</h3>
+          <h3 className={this.state.flashClass}>${parseFloat(this.state.price).toFixed(2)}</h3>
           <h5>{this.props.item.username}</h5>
           <input type="button" value="Pay me!" onClick={this.updateComponent} />
         </div>

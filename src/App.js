@@ -13,10 +13,10 @@ class App extends Component {
     return (
       <div className="App">
       <Header />
-        // Add items tag
+      <Items items={myData}/>
       <BottomAdds />
       <Footer />
-       <Items items={myData}/>
+       
       </div>
     );
   }
